@@ -1,6 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:phypo/pdf_viewer.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -57,9 +59,16 @@ class Home extends StatelessWidget {
     	  		Row(
     	  			children: [
     	  				Expanded(
-    	  				  child: Container(
-    	  				  	padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 15),
-    	  				  	decoration: const BoxDecoration(
+    	  				  child: GestureDetector(
+    	  				  	onTap: () => Navigator.push(context, CupertinoPageRoute(
+    	  				  		builder: (context) => const PdfViewer(
+    	  				  			url: 'https://firebasestorage.googleapis.com/v0/b/phypo-8d378.appspot.com/o/lkpd_1.pdf?alt=media&token=3604a263-9752-45ef-be74-42462996c67e',
+    	  				  			name: 'Buku Saku'
+    	  				  		)
+    	  				  	)),
+    	  				    child: Container(
+    	  				    	padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 15),
+    	  				    	decoration: const BoxDecoration(
 		    		        		borderRadius: BorderRadius.all(Radius.circular(15)),
 		    		        		color: Color(0xffabb1cf),
 		    		        	),
@@ -81,6 +90,7 @@ class Home extends StatelessWidget {
 		    		        			],
 		    		        		),
 		    		        	),
+    	  				    ),
     	  				  ),
     	  				),
     	  				const SizedBox(width: 10),
