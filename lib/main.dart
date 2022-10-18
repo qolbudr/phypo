@@ -19,6 +19,12 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.poppinsTextTheme(),
         primarySwatch: Colors.cyan,
       ),
+      builder: (context, child) {
+        return ScrollConfiguration(
+          behavior: NoGlow(),
+          child: child!,
+        );
+      },
       home: SplashScreen(),
     );
   }
@@ -67,5 +73,13 @@ class _SplashScreenState extends State<SplashScreen> {
         ],
       ),
     );
+  }
+}
+
+class NoGlow extends ScrollBehavior {
+  @override
+  Widget buildViewportChrome(
+      BuildContext context, Widget child, AxisDirection axisDirection) {
+    return child;
   }
 }
