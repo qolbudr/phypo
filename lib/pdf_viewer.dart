@@ -56,6 +56,7 @@ class _PdfViewerState extends State<PdfViewer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+    	backgroundColor: const Color(0xfff3f3f3),
     	appBar: AppBar(
     		centerTitle: true,
     		title: Text(widget.name, style: TextStyle(fontSize: 14)),

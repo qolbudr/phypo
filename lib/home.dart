@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:phypo/info.dart';
 import 'package:phypo/password_page.dart';
 import 'package:phypo/pdf_viewer.dart';
 
@@ -137,10 +138,14 @@ class Home extends StatelessWidget {
     	  							  ),
     	  							),
     	  							const SizedBox(height: 10),
-    	  							Container(
-    	  								height: 85,
-    	  								padding: const EdgeInsets.all(15),
-    	  								decoration: const BoxDecoration(
+    	  							GestureDetector(
+    	  								onTap: () => Navigator.push(context, CupertinoPageRoute(
+		    	  				  		builder: (context) => const Info()
+		    	  				  	)),
+    	  							  child: Container(
+    	  							  	height: 85,
+    	  							  	padding: const EdgeInsets.all(15),
+    	  							  	decoration: const BoxDecoration(
     		        						borderRadius: BorderRadius.all(Radius.circular(15)),
 		    		        				color: Color(0xffdec2cb),
     		        					),
@@ -167,6 +172,7 @@ class Home extends StatelessWidget {
 			    		        				),
     		        						],
     		        					),
+    	  							  ),
     	  							),
     	  						]
     	  					),

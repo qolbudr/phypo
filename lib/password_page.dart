@@ -42,6 +42,7 @@ class _PasswordPageState extends State<PasswordPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+    	backgroundColor: const Color(0xfff3f3f3),
     	body: Column(
     	  children: [
     	    Expanded(
