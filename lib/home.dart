@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:phypo/password_page.dart';
 import 'package:phypo/pdf_viewer.dart';
 
 class Home extends StatelessWidget {
@@ -62,7 +63,7 @@ class Home extends StatelessWidget {
     	  				  child: GestureDetector(
     	  				  	onTap: () => Navigator.push(context, CupertinoPageRoute(
     	  				  		builder: (context) => const PdfViewer(
-    	  				  			url: 'https://firebasestorage.googleapis.com/v0/b/phypo-8d378.appspot.com/o/lkpd_1.pdf?alt=media&token=3604a263-9752-45ef-be74-42462996c67e',
+    	  				  			url: 'https://firebasestorage.googleapis.com/v0/b/phypo-8d378.appspot.com/o/buku_saku.pdf?alt=media&token=c32a21c6-c82a-45a9-889b-75cb7554d26a',
     	  				  			name: 'Buku Saku'
     	  				  		)
     	  				  	)),
@@ -97,10 +98,18 @@ class Home extends StatelessWidget {
     	  				Expanded(
     	  					child: Column(
     	  						children: [
-    	  							Container(
-    	  								height: 85,
-    	  								padding: const EdgeInsets.all(15),
-    	  								decoration: const BoxDecoration(
+    	  							GestureDetector(
+    	  								onTap: () => Navigator.push(context, CupertinoPageRoute(
+		    	  				  		builder: (context) => const PasswordPage(
+		    	  				  			password: 'modulguru123',
+		    	  				  			url: 'https://firebasestorage.googleapis.com/v0/b/phypo-8d378.appspot.com/o/modul_pembelajaran.pdf?alt=media&token=d646b475-e972-40f6-9be0-539d8ef83b5f',
+		    	  				  			name: 'Modul Pembelajaran'
+		    	  				  		)
+		    	  				  	)),
+    	  							  child: Container(
+    	  							  	height: 85,
+    	  							  	padding: const EdgeInsets.all(15),
+    	  							  	decoration: const BoxDecoration(
     		        						borderRadius: BorderRadius.all(Radius.circular(15)),
 		    		        				color: Color(0xffc5b9cd),
     		        					),
@@ -125,6 +134,7 @@ class Home extends StatelessWidget {
 			    		        				),
     		        						],
     		        					),
+    	  							  ),
     	  							),
     	  							const SizedBox(height: 10),
     	  							Container(
@@ -168,10 +178,18 @@ class Home extends StatelessWidget {
 							const SizedBox(height: 20),
 							Column(
 								children: [
-									Container(
-										width: double.infinity,
-										padding: const EdgeInsets.all(15),
-										decoration: const BoxDecoration(
+									GestureDetector(
+										onTap: () => Navigator.push(context, CupertinoPageRoute(
+    	  				  		builder: (context) => const PasswordPage(
+    	  				  			password: 'lkpd1123',
+    	  				  			url: 'https://firebasestorage.googleapis.com/v0/b/phypo-8d378.appspot.com/o/lkpd_1.pdf?alt=media&token=3604a263-9752-45ef-be74-42462996c67e',
+    	  				  			name: 'LKPD I'
+    	  				  		)
+    	  				  	)),
+									  child: Container(
+									  	width: double.infinity,
+									  	padding: const EdgeInsets.all(15),
+									  	decoration: const BoxDecoration(
 	    		        		borderRadius: BorderRadius.all(Radius.circular(15)),
 	    		        		color: Colors.white,
 	    		        	),
@@ -195,12 +213,21 @@ class Home extends StatelessWidget {
     		        				)
 	    		        		],
 	    		        	),
+									  ),
 									),
 									const SizedBox(height: 10),
-									Container(
-										width: double.infinity,
-										padding: const EdgeInsets.all(15),
-										decoration: const BoxDecoration(
+									GestureDetector(
+										onTap: () => Navigator.push(context, CupertinoPageRoute(
+    	  				  		builder: (context) => const PasswordPage(
+    	  				  			password: 'lkpd2123',
+    	  				  			url: 'https://firebasestorage.googleapis.com/v0/b/phypo-8d378.appspot.com/o/lkpd_2.pdf?alt=media&token=349927fc-fa31-41c8-bbd6-07fa52dab2a5',
+    	  				  			name: 'LKPD II'
+    	  				  		)
+    	  				  	)),
+									  child: Container(
+									  	width: double.infinity,
+									  	padding: const EdgeInsets.all(15),
+									  	decoration: const BoxDecoration(
 	    		        		borderRadius: BorderRadius.all(Radius.circular(15)),
 	    		        		color: Colors.white,
 	    		        	),
@@ -224,9 +251,10 @@ class Home extends StatelessWidget {
     		        				)
 	    		        		],
 	    		        	),
-									)
-								],
-							)
+								  ),
+								)
+							],
+						)
     	  	],
     	  ),
     	),
