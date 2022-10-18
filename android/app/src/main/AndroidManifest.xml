@@ -2,7 +2,7 @@
     package="com.example.phypo">
    <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="phypo"
+        android:label="Phypo"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
