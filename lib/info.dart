@@ -76,7 +76,7 @@ class Info extends StatelessWidget {
   							),
   							const SizedBox(height: 10),
   							const Text(
-					  			'Merupakan fresh graduate S1 Pendidikan Fisika Universitas Negeri Jember dengan predikat cumlaude yang memiliki pengalaman sebagai ketua asisten laboratorium fisika dasar 1 serta menjadi penulis utama artikel penelitian tentang etnofisika. Saat ini, mengajar sebagai guru fisika di SMAN 16 Surabaya',
+					  			'Merupakan fresh graduate S1 Pendidikan Fisika Universitas Negeri Jember dengan predikat cumlaude yang memiliki pengalaman sebagai ketua asisten laboratorium fisika dasar 1 serta menjadi penulis utama artikel penelitian tentang etnofisika. Saat ini, mengajar sebagai guru fisika di SMAN 16 Surabaya.',
 					  			style: TextStyle(fontSize: 10),
 					  			textAlign: TextAlign.justify,
 					  		)
@@ -110,7 +110,7 @@ class Info extends StatelessWidget {
   							),
   							const SizedBox(height: 10),
   							const Text(
-					  			'Lahir di Banyuwangi pada tanggal 13 Mei 1990 merupakan dosen di Universitas Negeri Surabaya. Telah mengampu 18 matakuliah dalam 1 tahun terakhir, sudah melakukan pengabdian sebanyak 12 kali. Telah memiliki karya buku sebanyak 7 buku, sudah mempublikasi artikel ilmiah sebanyak 225 karya, pernah menjadi pemakalah seminar ilmiah sebanyak 43 dab memperoleh HKI sebanyak 15.',
+					  			'Lahir di Banyuwangi pada tanggal 13 Mei 1990 merupakan dosen di Universitas Negeri Surabaya. Telah mengampu 18 matakuliah dalam 1 tahun terakhir, sudah melakukan pengabdian sebanyak 12 kali. Telah memiliki karya buku sebanyak 7 buku, sudah mempublikasi artikel ilmiah sebanyak 225 karya, pernah menjadi pemakalah seminar ilmiah sebanyak 43 dan memperoleh HKI sebanyak 15.',
 					  			style: TextStyle(fontSize: 10),
 					  			textAlign: TextAlign.justify,
 					  		)
