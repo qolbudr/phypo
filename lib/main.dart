@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Phypo',
+      title: 'PhyPo',
       theme: ThemeData(
         textTheme: GoogleFonts.poppinsTextTheme(),
         primarySwatch: Colors.cyan,
