@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:flutter_pdfview/flutter_pdfview.dart';
+import 'package:lottie/lottie.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -75,7 +76,7 @@ class _PdfViewerState extends State<PdfViewer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    	backgroundColor: const Color(0xfff3f3f3),
+    	backgroundColor: Colors.white,
     	appBar: AppBar(
     		centerTitle: true,
     		title: Text(widget.name, style: const TextStyle(fontSize: 14)),
@@ -83,8 +84,15 @@ class _PdfViewerState extends State<PdfViewer> {
     		elevation: 1,
     	),
     	body: _isLoading ?
-    	const Center(
-    		child: CircularProgressIndicator(),
+    	Center(
+    		child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Lottie.asset('assets/loading.json', width: 250),
+            SizedBox(height: 12),
+            Text("Loading document ${(precentage * 100).ceil()}%")
+          ],
+        ),
     	) :
     	Stack(
         alignment: Alignment.bottomCenter,
