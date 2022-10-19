@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lottie/lottie.dart';
 import 'package:phypo/info.dart';
 import 'package:phypo/password_page.dart';
 import 'package:phypo/pdf_viewer.dart';
@@ -49,9 +50,9 @@ class Home extends StatelessWidget {
     	  		      ],
     	  		    ),
     	  		    Positioned(
-    	  		  		bottom: 0,
-    	  		  		right: 15,
-    	  		  		child: Image.asset('assets/study.png', width: 180)
+    	  		  		bottom: -15,
+    	  		  		right: 0,
+    	  		  		child: Lottie.asset('assets/earth.json', width: 180)
     	  		  	),
     	  		  ],
     	  		),
